@@ -9,46 +9,33 @@ Install
 -------
 
 ```bash
-npm install --save daouoffice-bot-api
+pip install daouoffice-bot-api
 ```
 
 Usage
 -----
 
-```js
-const DaouOfficeBot = require('daouoffice-bot-api');
-
-// http://bot.terracetech.co.kr:8000에서 발급받은 apikey를 입력
-const options = {
-	"daouApiUrl" : "http://bot.terracetech.co.kr:8000",
-	"botServerPort" : 3000,
-	"apiKey" : "YOUR_API_KEY"
+```py
+options = {
+    "daouApiUrl" : "http://172.22.1.103:8000",
+    "botServerPort" : 3000,
+    "apiKey" : "O6hFGmkAnjg0Eu4vYOHwzg=="
 };
 
-// Create a bot
-const bot = new DaouOfficeBot(options);
+chatBot = daouoffice_chat_bot_python.DaouOfficeBot(options)
 
-// express start
-bot.start();
 
-// Listen for any kind of message.
-bot.on('message',(result) => {
+def rescvieMsg(self, request):
+    print("rescvieMsg")
+    content = request.json
+    print(json.dumps(content))
+    message = content.get('message').get('content')
+    chatBot.sendMessage(content.get('buddySeq'), content.get('chatInfo'), message)
+    return 'OK'
 
-	var message = {
-		type : "text",
-		content : result.message.content
-	}
 
-	//send message (echo)
-	daoubot.sendMessage(result.buddySeq,result.chatInfo,message)
-	.then(function(o){
-		console.log(o);
-	}).catch(function(err){
-		console.log(err);
-	});
-	
 
-});
+chatBot.start(rescvieMsg)
 ```
 
 Documentation
@@ -61,9 +48,6 @@ Test
 
 **Note:** The following command creates an html report under the local mochawesome-report folder.
 
-```bash
-npm run report
-```
 
 License
 -------
