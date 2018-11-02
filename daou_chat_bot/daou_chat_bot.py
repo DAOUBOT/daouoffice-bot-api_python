@@ -6,7 +6,7 @@ import json
 import os
 
 
-class DaouOfficeBot:
+class daou_chat_bot:
 
     def __init__(self, option):
                 print(option)

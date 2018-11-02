@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+daou_chat_bot/__init__.py
+daou_chat_bot/daou_chat_bot.py
+daou_chat_bot.egg-info/PKG-INFO
+daou_chat_bot.egg-info/SOURCES.txt
+daou_chat_bot.egg-info/dependency_links.txt
+daou_chat_bot.egg-info/not-zip-safe
+daou_chat_bot.egg-info/top_level.txt

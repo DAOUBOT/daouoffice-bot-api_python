@@ -1,0 +1,19 @@
+Metadata-Version: 1.2
+Name: daou-chat-bot
+Version: 0.0.6
+Summary: Python wrapper for daouoffice_chat_bot_python
+Home-page: https://github.com/DAOUBOT/daouoffice-bot-api_python
+Author: JoJunHo
+Author-email: charm1109@naver.com
+License: UNKNOWN
+Download-URL: https://githur.com/rampart81/pyquibase/archive/1.2.tar.gz
+Description: UNKNOWN
+Keywords: daou,daouoffice
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.2
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Requires-Python: >=3

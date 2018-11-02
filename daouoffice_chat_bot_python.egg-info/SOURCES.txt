@@ -1,7 +1,0 @@
-setup.cfg
-setup.py
-daouoffice_chat_bot_python.egg-info/PKG-INFO
-daouoffice_chat_bot_python.egg-info/SOURCES.txt
-daouoffice_chat_bot_python.egg-info/dependency_links.txt
-daouoffice_chat_bot_python.egg-info/not-zip-safe
-daouoffice_chat_bot_python.egg-info/top_level.txt
