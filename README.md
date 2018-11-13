@@ -9,7 +9,7 @@ Install
 -------
 
 ```bash
-pip install daouoffice_chat_bot_python
+pip install daou-chat-bot
 ```
 
 Usage
