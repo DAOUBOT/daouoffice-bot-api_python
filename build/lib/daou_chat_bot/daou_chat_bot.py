@@ -35,7 +35,7 @@ class daou_chat_bot:
         print('==== Send Message ====')
         print('buddySeq = ' + str(buddySeq))
         print('chatInfo = ' + str(chatInfo))
-        print('message = ' + message)
+        print('message = ' + str(message)
 
         chattype = chatInfo.get('type')
         isSingle = False
