@@ -9,14 +9,15 @@ Install
 -------
 
 ```bash
-pip install daouoffice_chat_bot_python
+pip install daou-chat-bot
 ```
 
 Usage
 -----
 
 ```py
-import lib
+
+from daou_chat_bot import daou_chat_bot
 import requests
 import json
 
@@ -26,7 +27,7 @@ options = {
     "apiKey" : "O6hFGmkAnjg0Eu4vYOHwzg=="
 };
 
-chatBot = lib.DaouOfficeBot(options)
+chatBot = daou_chat_bot.daou_chat_bot(options)
 
 
 def rescvieMsg(self, request):
@@ -37,9 +38,8 @@ def rescvieMsg(self, request):
     chatBot.sendMessage(content.get('buddySeq'), content.get('chatInfo'), message)
     return 'OK'
 
-
-
 chatBot.start(rescvieMsg)
+
 ```
 
 Documentation
